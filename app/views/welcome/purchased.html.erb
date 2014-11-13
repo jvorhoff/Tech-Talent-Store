@@ -1,0 +1,10 @@
+<% if @out_of_stock.empty? %>
+
+<h2> Thank You!</h2>
+<p> Thank you for purchasing: </p>
+<p><%= pluralize(@quantity, @item) %></p>
+<p>Enjoy!</p>
+
+<% else %>
+	<%= @out_of_stock %>
+<% end %>
